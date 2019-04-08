@@ -9,7 +9,6 @@ const signin = require('./controllers/signin');
 const profile = require('./controllers/profile');
 const image = require('./controllers/image');
 
-let DATABASE_URL =    "postgres://feztpmdruenffa:3e00d3dabe733fa25a24ecdfeaff293a9745c7159e4c3af7167ce47d7b48bd4f@ec2-54-225-129-101.compute-1.amazonaws.com:5432/d70dnfm9qqlluo"
 
 const db = knex({
 	client: 'pg',
