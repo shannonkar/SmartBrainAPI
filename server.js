@@ -9,6 +9,9 @@ const signin = require('./controllers/signin');
 const profile = require('./controllers/profile');
 const image = require('./controllers/image');
 
+const app = express();
+app.use(bodyParser.json());
+app.use(cors());
 
 const db = knex({
 	client: 'pg',
@@ -19,9 +22,6 @@ const db = knex({
 });
 
 
-const app = express();
-app.use(bodyParser.json());
-app.use(cors());
 
 
 app.get('/', (req, res)=>{res.send('it is working') });
