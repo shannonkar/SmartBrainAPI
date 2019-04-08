@@ -14,7 +14,7 @@ let DATABASE_URL =    "postgres://feztpmdruenffa:3e00d3dabe733fa25a24ecdfeaff293
 const db = knex({
 	client: 'pg',
     connection: {
-    connectionString : DATABASE_URL,
+    connectionString : process.env.DATABASE_URL,
       ssl:true,
 	}
 });
